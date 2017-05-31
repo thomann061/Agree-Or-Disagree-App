@@ -1,8 +1,40 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.header-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.main-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.statement-container {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #eee;
+}
+
+.statement-inner-container {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.agree-btn {
+  margin-right: 10px;
+}
+
+.main-title {
+  padding: 10px;
+}
+
+.agree-btn, .disagree-btn {
+  width: 125px;
 }

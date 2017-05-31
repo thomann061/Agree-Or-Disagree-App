@@ -1,5 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div.container.main-container(ng-app="app" ng-controller="ctrl" ng-cloak)
+    div.d-flex.justify-content-center(ng-repeat="statement in statements")
+      div.statement-container(ng-style="style")
+        div.statement-inner-container
+          p(ng-bind="statement.text")
+          button.btn.btn-success.agree-btn(type="button" ng-disabled="voted" ng-click="agree(statement); style={'background-color':'#5cb85c'}; voted=true") {{ statement.agree }} Agree
+          button.btn.btn-danger.disagree-btn(type="button" ng-disabled="voted" ng-click="disagree(statement); style={'background-color':'#d9534f'}; voted=true") {{ statement.disagree }} Disagree
